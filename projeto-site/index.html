@@ -1,10 +1,7 @@
-<!-- DTD = Document Type Definition -->
-<!-- HTML5 -->
 <!DOCTYPE html>
 
-<!-- elemento principal do Documento HTML-->
 <html lang="pt-br">
-    <!-- O head é a área onde podemos configurar noss o documento HTML -->
+    
     <head>
         <!-- As tags meta tem a função de passar informações a página que vão resultar desde a configuração do mapa de caractéres ou seja centuação, até a responsividade. E também compatibilidade.-->
         <meta charset="UTF-8"/>
@@ -26,15 +23,23 @@
     </head>
     <!-- O Body é um elemento que está no mesmo nível de head, porém ele abriga apenas conteúdo, diferentemente do head.-->
     <body>
-        
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#fotos">Fotos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>         
-        </nav>
+        <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicos">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fotos">Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+            </ul>
+          
+          </nav>
         
         <!-- header = Este elemento concentra conteúdo referente ao cabeçalho e apresentação dos documentos ou seções. -->
         <header id="topo">
@@ -112,7 +117,7 @@
         </section>
 
         <footer>
-            <a href="#topo" class="botao">Voltar</a>
+            <a href="#topo" class="mx-auto col-2 btn btn-primary">Voltar</a>
             <p>Desenvolvido por <span>Desenvolvedor</span></p>
             <p>CodeYo.Todos os direitos reservados. 2021&copy;</p>
         </footer>
