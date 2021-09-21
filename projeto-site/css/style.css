@@ -102,6 +102,12 @@ header p{
 
 /* Sobre */
 
+<div class="grid">
+  <div class="ola">.g-col-6 .g-col-md-4</div>
+  <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
+  <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
+</div>
+
 #sobre{
     display: flex;
     flex-direction: column;
