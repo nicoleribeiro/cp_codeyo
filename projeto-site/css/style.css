@@ -19,22 +19,24 @@ nav ul li{
  */
 
 
-html{
+html {
     font-size: 16px;
 }
 
-body{
+body {
     font-family: 'Oswald', sans-serif;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-family: 'Asap', sans-serif;
 }
 
-.botao{
+.botao {
     color: #ffffff;
     text-decoration: none;
-    padding:10px 30px;
+    padding: 10px 30px;
     background-color: #191970;
     font-size: 0.9em;
     border-radius: 3px;
@@ -42,20 +44,20 @@ h1,h2,h3{
 
 /* Navbar */
 
-nav{
+nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #191970;
 }
 
-nav  a{
+nav a {
     font-weight: 800;
     font-size: 2rem;
     font-family: 'Asap', sans-serif;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,12 +66,12 @@ nav ul{
     width: 100%;
 }
 
-nav ul li{
+nav ul li {
     text-align: center;
     width: 100%;
 }
 
-nav ul li a{
+nav ul li a {
     display: inline-block;
     padding: 10px 0;
     width: 100%;
@@ -79,36 +81,30 @@ nav ul li a{
 
 /* Cabeçalho */
 
-header{
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url("../img/fundo-pc.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     color: #ffffff;
     text-align: center;
     padding: 20px;
 }
 
-header h1{
+header h1 {
     color: #ffffff;
 }
 
-header p{
+header p {
     margin-bottom: 2em;
 }
 
 /* Sobre */
 
-<div class="grid">
-  <div class="ola">.g-col-6 .g-col-md-4</div>
-  <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
-  <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
-</div>
-
-#sobre{
+<div class="grid"><div class="ola">.g-col-6 .g-col-md-4</div><div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div><div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div></div>#sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,30 +114,30 @@ header p{
     color: #ffffff;
 }
 
-#sobre p{
+#sobre p {
     margin-bottom: 2.5em;
     max-width: 1000px;
 }
 
-#sobre h2{
+#sobre h2 {
     color: #ffffff;
 }
 
-#sobre .botao{
+#sobre .botao {
     background-color: #f1f1f1;
     color: #1c1c1c;
 }
 
 
 /* Serviços */
-#servicos{
+#servicos {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
 }
 
-#servicos div{
+#servicos div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,21 +145,21 @@ header p{
     margin-top: 30px;
 }
 
-#servicos div img{
+#servicos div img {
     width: 80%;
     transform: scale(80%);
     transition: ease-in transform 0.5s;
 }
 
-#servicos div img:hover{
+#servicos div img:hover {
     transform: scale(100%);
 }
 
-#servicos div img{
+#servicos div img {
     width: 50%;
 }
 
-#servicos h2{
+#servicos h2 {
     margin-bottom: 20px;
 }
 
@@ -175,7 +171,7 @@ header p{
     padding-top: 20px;
 }
 
-#fotos h2{
+#fotos h2 {
     margin-bottom: 20px;
 }
 
@@ -189,66 +185,66 @@ header p{
     padding: 20px;
 }
 
-#contato h2{
+#contato h2 {
     color: #000000;
 }
 
 /* Rodapé */
-footer{
+footer {
     text-align: center;
     background-color: #191970;
     color: #ffffff;
     padding: 15px;
 }
 
-footer .botao{
+footer .botao {
     padding-top: 2px 0;
     border: 1px solid #ffffff;
 }
 
 /* @Media-Querie */
-@media screen and (min-width:770px){
+@media screen and (min-width:770px) {
 
     /* nav */
-    nav{
+    nav {
         flex-direction: row;
         justify-content: space-around;
-    }    
-   
-    nav ul{
+    }
+
+    nav ul {
         flex-direction: row;
         width: 70%;
     }
 
     /* Cabeçalho */
-    header{
+    header {
         height: 60vh;
         justify-content: center;
-    }   
+    }
 
     /* Sobre */
 
-    #sobre{
+    #sobre {
         height: 30vh;
         justify-content: center;
         min-height: 250px;
     }
 
     /* Serviços */
-    #servicos{
+    #servicos {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
         max-width: 1000px;
         margin: 0 auto;
     }
-    
-    #servicos h2{
+
+    #servicos h2 {
         text-align: center;
         width: 100%;
     }
 
-    #servicos div{
+    #servicos div {
         flex-grow: 1;
         flex-basis: 150px;
         padding: 0 10px;
