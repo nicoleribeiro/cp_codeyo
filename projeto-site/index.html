@@ -1,10 +1,7 @@
-<!-- DTD = Document Type Definition -->
-<!-- HTML5 -->
 <!DOCTYPE html>
 
-<!-- elemento principal do Documento HTML-->
 <html lang="pt-br">
-    <!-- O head é a área onde podemos configurar noss o documento HTML -->
+   
     <head>
         <!-- As tags meta tem a função de passar informações a página que vão resultar desde a configuração do mapa de caractéres ou seja centuação, até a responsividade. E também compatibilidade.-->
         <meta charset="UTF-8"/>
@@ -12,34 +9,38 @@
         <!-- IMPORTANTE -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <!-- Arquivo NORMALIZE.CSS = Utilizado para normalizar o css entre os navegadores [CROSS-BROWSERS]-->
         <link rel="stylesheet" href="./css/normalize.css">
 
-        <!-- style.css = Folha de estilos utilizada para a esrtilização do projeto.-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
         <link rel="stylesheet" href="./css/style.css">
 
-        <!-- IMPORTANTE -->
-        <title>LAYOUT-BÁSICO</title>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        
+        <title>LAYOUT-BÁSICO COM BOOTSTRAP</title>
     </head>
-    <!-- O Body é um elemento que está no mesmo nível de head, porém ele abriga apenas conteúdo, diferentemente do head.-->
+    
     <body>
-        <!-- Elemento NAV é semântico. Utilizamos para comportar, links, listas, menus e afins.
-            - Podemos criar no NAV as seguintes listas
-            - li = List Itens, estes são os itens das listas, e não podem faltar.
-            - ol = Ordered List( Listas ordenadas, ou seja, cria uma lista com itens numerados, que podem ser alterados para letras, algarismos etc.)
-            - ul = Unordered List(Cria uma lista de itens sem ordenação, é o elemento mais utilizado.)
-            - dl = description list que utiliza os dt que são termos dentro da lista e temos o dd que são a descrição dos termos.
-        -->
-
-      
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#fotos">Fotos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>         
-        </nav>
+        <nav class="navbar navbar-expand-sm bg-dark justify-content-center"></nav>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicos">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fotos">Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+            </ul>
+          
+          </nav>
         
         <!-- header = Este elemento concentra conteúdo referente ao cabeçalho e apresentação dos documentos ou seções. -->
         <header id="topo">
@@ -67,7 +68,6 @@
 
         <section id="servicos">
             <h2>Serviços</h2>
-
             <!-- div = Este elemento surge sempre como um coringa no meio do HTML. Ele é utilizado pra tudo. Seu display padrão é Block. Mas pode se tornar o que você precisar. Cuidado com sua utilização pois não é semântico. -->
             
     
@@ -105,18 +105,46 @@
                     <p class="card-text">Criamos projetos para grandes empresas. Consulte um de nossos especialistas.</p>
                     </div>
                   </div>
-
-           
         </section>
 
+        
         <section id="fotos">
             <h2>Fotos</h2>
-            <img src="./img/backbone.jpg" alt="Rede de computadores">
-            <img src="./img/cidade.jpg" alt="cidade virtual">
-            <img src="./img/comunicao.jpg" alt="Rede de computadores">
-            <img src="./img/icones.png" alt="icones de dispositivos e redes sociais">
-            <img src="./img/internet.jpg" alt="internet">
-            <img src="./img/rede.jpg" alt="Rede de virtual">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/backbone.jpg" class="d-block w-100" alt="Rede de computadores">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/comunicao.jpg" class="d-block w-100" alt="Rede de computadores">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/icones.png" class="d-block w-100" alt="icones de dispositivos e redes sociais">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/internet.jpg" class="d-block w-100" alt="internet">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/rede.jpg" class="d-block w-100" alt="Rede de virtual">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
         
         <section id="contato">
@@ -135,7 +163,7 @@
 
         <footer>
             <a href="#topo" class="botao">Voltar</a>
-            <p>Desenvolvido por <span>Desenvolvedor</span></p>
+            <p>Desenvolvido por <span>CodeYo</span></p>
             <p>Todos os direitos reservados. 2021&copy;</p>
         </footer>
     </body>
