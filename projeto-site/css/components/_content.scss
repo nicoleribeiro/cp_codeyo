@@ -1,0 +1,76 @@
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #191970;
+    color: #ffffff;
+
+    p {
+        margin-bottom: 2.5em;
+        max-width: 1000px;
+    }
+
+    h2 {
+        color: #ffffff;
+    }
+
+    .botao {
+        background-color: #f1f1f1;
+        color: #1c1c1c;
+    }
+}
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+
+        img {
+            width: 80%;
+            transform: scale(80%);
+            transition: ease-in transform 0.5s;
+            width: 50%;
+
+            &:hover {
+                transform: scale(100%);
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+#fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+    h2 {
+        color: #000000;
+    }
+}
