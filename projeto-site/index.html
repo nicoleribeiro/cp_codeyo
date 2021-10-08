@@ -1,28 +1,17 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
-   
+<html lang="pt-br" dir="ltr">
     <head>
-        <!-- As tags meta tem a função de passar informações a página que vão resultar desde a configuração do mapa de caractéres ou seja centuação, até a responsividade. E também compatibilidade.-->
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <!-- IMPORTANTE -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
         <link rel="stylesheet" href="./css/normalize.css">
-
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
         <link rel="stylesheet" href="./css/style.css">
-
-        <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        
         <title>LAYOUT-BÁSICO COM BOOTSTRAP</title>
     </head>
-    
     <body>
         <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
             <ul class="navbar-nav">
@@ -39,67 +28,56 @@
                 <a class="nav-link" href="#contato">Contato</a>
               </li>
             </ul>
-          
           </nav>
-        
-        <!-- header = Este elemento concentra conteúdo referente ao cabeçalho e apresentação dos documentos ou seções. -->
         <header id="topo">
-            <div class="alert alert-success" role="alert">
-                <h1 class="alert-heading">O site!</h1>
-               <h1><p>Professor - Ensino Superior.</p></h1>
-                <hr>
-                <p class="mb-0">Ministro aulas nas áreas de, Engenharia de Software, Desenvolvimento Web com diversas linguagens atuais. Iniciei minha carreira como continuo em empresas de informática o que me deixou mais próximo da área de TI, tornando mais fácil o meu desenvolvimento como programador ao longo dos anos. Sempre tive ótimo instrutores e amigos que me ajudavam na caminhada do conhecimento, então isso com certeza deve ter me influenciado na minha carreira hoje</p>
-              </div>
+            <div class="alert alert-primary" role="alert">
+              <h1 class="alert-heading">O site!</h1>
+              <h1><p>Professor - Ensino Superior.</p></h1>
+              <hr>
+              <p class="mb-0">Ministro aulas nas áreas de, Engenharia de Software, Desenvolvimento Web com diversas linguagens atuais. Iniciei minha carreira como continuo em empresas de informática o que me deixou mais próximo da área de TI, tornando mais fácil o meu desenvolvimento como programador ao longo dos anos. Sempre tive ótimo instrutores e amigos que me ajudavam na caminhada do conhecimento, então isso com certeza deve ter me influenciado na minha carreira hoje</p>
+            </div>
             <a href="#servicos" class="botao">Ver Mais</a>
         </header>
-
-        <!-- section = A section serve muito bem para a divisão da página em setores, muitos a subtituem pela div, porém a div não é um elemento semântico.-->
         <section id="sobre">
             <h2>Sobre</h2>
             <p>Eu sou Alexandre. Sou professor da fiap mais de 10 anos. Dou aula em outras instituições de ensino também. Porém aqui na fiap eu tive um desenvolvimento muito grande por causa do network e também por causa do tamanho da fiap no mercado.</p>
             <a href="#contato" class="botao">Contrate Agora</a>
         </section>
-
         <section id="servicos">
             <h2>Serviços</h2>
-
-            <div class="card" style="width: 25rem;">
-                <img class="card-img-top" src="./img/desenvolvimento.jpg" alt="Computadores">
-                <div class="card-body">
-                  <h5 class="card-title">Desenvolvimento</h5>
-                  <p class="card-text">Realizamos serviço de  desenvolvimento Web com as melhores tecnologias do mercado.</p>
+              <div class="cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/desenvolvimento.jpg" class="card-img-top" alt="Computadores">
+                    <div class="card-body">
+                      <h3>Desenvolvimento</h3>
+                      <p class="card-text">Realizamos serviço de  desenvolvimento Web com as melhores tecnologias do mercado.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card" style="width: 25rem;">
-                <img class="card-img-top" src="./img/cursos.png" alt="Notebooks">
-                <div class="card-body">
-                  <h5 class="card-title">Cursos</h5>
-                  <p class="card-text">Oferecemos minicursos remotos, para s linguagens que estão em alta na Web hoje.</p>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/cursos.png" class="card-img-top" alt="Notebooks">
+                    <div class="card-body">
+                      <h3>Cursos</h3>
+                      <p class="card-text">Oferecemos minicursos remotos, para as linguagens que estão em alta na Web hoje.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card" style="width: 25rem;">
-                <img class="card-img-top" src="./img/eventos.jpg" alt="Fone de Ouvido">
-                <div class="card-body">
-                  <h5 class="card-title">Workshops</h5>
-                  <p class="card-text">Produzimos Workshops para todo o país.</p>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/eventos.jpg" class="card-img-top" alt="Fone de Ouvido">
+                    <div class="card-body">
+                      <h3>Workshops</h3>
+                      <p class="card-text">Produzimos Workshops para todo o país.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card" style="width: 25rem;">
-                <img class="card-img-top" src="./img/seguranca-info.png" alt="Texto">
-                <div class="card-body">
-                  <h5 class="card-title">Segurança da informação</h5>
-                  <p class="card-text">Criamos projetos para grandes empresas. Consulte um de nossos especialistas.</p>
-            </div>
-            </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/seguranca-info.png" class="card-img-top" alt="Texto">
+                    <div class="card-body">
+                      <h3>Segurança da informação</h3>
+                      <p class="card-text">Criamos projetos para grandes empresas. Consulte um de nossos especialistas.</p>
+                    </div>
+                </div>
+              </div>
         </section>
-
-        
         <section id="fotos">
             <h2>Fotos</h2>
-
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -135,11 +113,9 @@
                 </button>
               </div>
         </section>
-        
         <section id="contato">
             <h2>Contatos</h2>
             <p>Fale Conosco</p>
-
             <div>
                 <img src="./img/tel.png" alt="telefone">
                 <p><a href="tel:11987344534">(11)9 8734-4534</a></p>
@@ -149,7 +125,6 @@
                 <p><a href="mailto:profalexandre.jesus@fiap.com.br">profalexandre.jesus@fiap.com.br</a></p>
             </div>
         </section>
-
         <footer>
             <a href="#topo" class="botao">Voltar</a>
             <p>Desenvolvido por <span>CodeYo</span></p>
