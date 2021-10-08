@@ -1,0 +1,49 @@
+@import "./components/header";
+@import "./components/nav";
+@import "./components/footer";
+@import "./components/text";
+
+@import "./components/button";
+@import "./components/content";
+
+@media screen and (min-width: 770px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+
+        ul {
+            flex-direction: row;
+            width: 70%;
+        }
+    }
+
+    header {
+        height: 60vh;
+        justify-content: center;
+    }
+
+    #sobre {
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        h2 {
+            text-align: center;
+            width: 100%;
+        }
+
+        div {
+            flex-grow: 1;
+            flex-basis: 150px;
+            padding: 0 10px;
+        }
+    }
+}
